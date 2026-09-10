@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+name: private-content-understanding
+requiredVersions:
+  azd: ">=1.29.0"
+infra:
+  provider: bicep
+  path: infra
+  module: main
+# Private data-plane setup and source-code deployment run from the Windows VM.
+# This project intentionally uses azd provision, not a public app-hosting service.

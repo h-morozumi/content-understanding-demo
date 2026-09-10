@@ -1,0 +1,19 @@
+NORTHWIND DEMO SERVICES
+FICTIONAL SAMPLE - NOT A REAL INVOICE
+
+Invoice number: DEMO-2026-001
+Invoice date: September 10, 2026
+Due date: October 10, 2026
+
+Bill to: Contoso Demo Company
+Address: 100 Example Avenue, Austin, TX 78701, USA
+
+Description                    Quantity    Unit price    Amount
+Document analysis workshop           2    USD 150.00    USD 300.00
+Demo environment documentation       1    USD 100.00    USD 100.00
+
+Subtotal: USD 400.00
+Tax: USD 32.00
+Total amount due: USD 432.00
+
+Payment terms: Net 30 days.

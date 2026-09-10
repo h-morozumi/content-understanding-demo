@@ -1,0 +1,41 @@
+[project]
+name = "private-cu-demo"
+version = "0.1.0"
+description = "Private Blob and Content Understanding analysis with a Foundry hosted agent."
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "agent-framework-foundry>=1.11.0,<2",
+    "agent-framework-foundry-hosting>=1.0.0b260813,<2",
+    "azure-ai-projects>=2.3.0,<2.4.0",
+    "azure-core>=1.37.0,<2",
+    "azure-identity>=1.25.0,<2",
+    "azure-storage-blob>=12.26.0,<13",
+    "openai>=2.29.0,<3",
+    "pydantic>=2.11.0,<3",
+    "requests>=2.32.4,<3",
+]
+
+[project.scripts]
+private-cu = "private_cu_demo.cli:main"
+
+[dependency-groups]
+dev = [
+    "jsonschema>=4.23.0,<5",
+    "pyyaml>=6.0.2,<7",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.26,<0.10"]
+build-backend = "uv_build"
+
+[tool.uv]
+environments = [
+    "sys_platform == 'win32' and platform_machine == 'AMD64'",
+    "sys_platform == 'linux' and platform_machine == 'x86_64'",
+]
+
+[[tool.uv.index]]
+name = "approved-pypi"
+url = "https://packagefeedproxy.microsoft.io/pypi/simple/"
+default = true
