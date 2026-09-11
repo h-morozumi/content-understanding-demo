@@ -1,0 +1,17 @@
+.azure/*
+.env
+.env.*
+!.env.example
+client.json
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.coverage
+outputs/
+data/
+*.zip
+infra/main.json
+.ruff_cache/
